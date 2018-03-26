@@ -1,3 +1,9 @@
 # Interview Challenge
 ![Screenshot](./screenshot.png)
-[DEMO]()
+
+* React (create-react-app)
+* Redux
+* SCSS
+* Recharts
+
+[DEMO](https://amberjen.github.io/interview-challenge/)
