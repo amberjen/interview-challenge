@@ -1,7 +1,8 @@
 {
-  "name": "kyper-challenge",
+  "name": "interview-challenge",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://amberjen.github.io/interview-challenge",
   "dependencies": {
     "modern-normalize": "^0.4.0",
     "prop-types": "^15.6.1",
@@ -14,8 +15,11 @@
   },
   "scripts": {
     "start": "sass --watch src/styles/scss:src/styles/css | react-scripts start",
-    "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
