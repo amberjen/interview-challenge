@@ -1,0 +1,72 @@
+/* ------- Global ------- */
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 1rem;
+  padding: 2rem 2.5rem;
+  position: relative;
+  color: $secondary-color;
+}
+
+p {
+  margin-top: 0;
+  &.title {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+}
+
+/* ------- App ------- */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 5rem);
+  border: $app-border;
+  border-radius: $app-border-radius;
+}
+
+/* ------- Section ------- */
+section { padding: 1.5rem 1.5rem; }
+
+.section-config {
+  width: 100%;
+  height: 12.5%;
+  border-bottom: $app-border;
+  display: flex;
+  align-items: center;
+}
+
+.layout-helper {
+  display: flex;
+  height: 87.5%;
+}
+
+.section-controls {
+  width: 25%;
+  .title { margin-bottom: .5rem; }
+}
+
+.section-chart {
+  border-left: $app-border;
+  width: 75%;
+  @extend %flex-cV-cH;
+}
+
+/* ------- Container ------- */
+.tabs-container { margin: 1rem 0; }
+
+.config-container {
+  display: flex;
+  align-items: center;
+
+  .title { margin-right: .5rem; }
+}
+
+/* ------- ErrorMsg ------- */
+.error-msg {
+  position: absolute;
+  top: 19px;
+  left: 81px;
+  color: $error-color;
+  font-size: .875rem;
+}

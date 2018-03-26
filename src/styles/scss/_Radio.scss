@@ -1,0 +1,24 @@
+/* ------- Radio ------- */
+.radio-group {
+  display: flex;
+  border: $app-border;
+  border-radius: $app-border-radius;
+  padding: .5rem 1rem;
+
+  .radio {
+    margin-right: 1rem;
+    &:last-child { margin-right: 0; }
+  }
+
+  input[type="radio"] {
+    -webkit-appearance: none;
+    position: absolute;
+  }
+  input[type="radio"] + .icon { cursor: pointer; }
+  input[type="radio"]:checked + .icon { cursor: default; }
+  input[type="radio"]:checked + .icon.square,
+  input[type="radio"]:checked + .icon.circle { background: $primary-color; }
+  input[type="radio"]:checked + .icon.triangle { border-bottom-color: $primary-color; }
+  input[type="radio"]:checked + .icon.plus,
+  input[type="radio"]:checked + .icon.plus:after { background: $primary-color; }
+}

@@ -1,0 +1,15 @@
+$primary-color: #419495;
+$secondary-color: #99bbbb;
+$black-color: #313439;
+$light-grey: rgb(151, 151, 151);
+$white-color: #fafafa;
+$app-border: 2px solid rgb(151, 151, 151);
+$app-border-radius: 4px;
+$error-color: #f45b69;
+$icon-default-size: 25px;
+
+%flex-cV-cH {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

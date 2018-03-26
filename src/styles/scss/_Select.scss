@@ -1,0 +1,48 @@
+/* ------- Select ------- */
+.select{
+  position: relative;
+
+  input,
+  .option-menu {
+    border: $app-border;
+    border-radius: $app-border-radius;
+    padding: .5rem 1rem;
+    width: 75px;
+  }
+
+  input {
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
+    outline: none;
+  }
+
+  input.error { border-color: $error-color; }
+
+  .option-menu {
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px dotted $light-grey;
+
+    .option {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+      cursor: pointer;
+    }
+
+    .option:last-child { margin-bottom: 0; }
+
+    .option.selected { cursor: default; }
+    .option.selected .icon.square,
+    .option.selected .icon.circle { background: $primary-color; }
+    .option.selected .icon.triangle { border-bottom-color: $primary-color; }
+    .option.selected .icon.plus,
+    .option.selected .icon.plus:after { background: $primary-color; }
+    .option .icon.plus { transform: translateX(-10px); }
+
+  }
+
+}
